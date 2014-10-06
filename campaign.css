@@ -3,15 +3,25 @@
 \* ======================================= */
 
 .campaignPage .progress {
-    width: 300px;
+    margin-left: 30px;
+    width: 500px;
+    float: left;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 40px;
+    position: relative;
 }
 
-.campaignPage .fire {
-    height: 50px;
+.campaignPage .progress canvas {
+    border-radius: 5px;
 }
 
 .campaignPage .fuse {
-    background-image: url(images/fuse.jpg);
-    height: 11px;
-    margin-top: -10px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 1s ease;
+    border-radius: 5px;
+    background-color: #333;
+    height: 40px;
 }
