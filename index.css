@@ -3,13 +3,15 @@
 \* ======================================= */
 
 .landingPage header{
-    background-image: url();
+    text-align: center;
 }
 
 .landingPage .floaters{
     width: 980px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .landingPage h1 {
@@ -34,6 +36,16 @@
     font-family: "MuseoSansRounded-100";
     align-content: center;
     text-align: center;
+    position: relative;
+    vertical-align: top;
+}
+
+.landingPage .floatingBox.family img {
+    padding-bottom: 21px;
+}
+
+.landingPage .floatingBox.rewards img {
+    padding-bottom: 10px;
 }
     
 .landingPage button {
@@ -54,4 +66,5 @@
     width: 50% ;
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 7px;
 }
