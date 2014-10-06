@@ -19,12 +19,14 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="index.js"></script>
         <script>
-//            Chegg.init({
-//                appName: 'debtonator',
-//                version: 1,
-//                redirect: '/',
-//                domain: 'https://henry.live.dev.cheggnet.com/'
-//            });
+        if(top != window) {
+            Chegg.init({
+                appName: 'debtonator',
+                version: 1,
+                redirect: '/',
+                domain: 'https://henry.live.dev.cheggnet.com/'
+            });
+        }
         </script>
 	</body>
 </html>
