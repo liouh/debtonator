@@ -2,7 +2,12 @@
 <html>
 	<head>
 		<title>Debtonator</title>
+	</head>
+	<body>
+		<h1>Campaign Page</h1>
+        
         <script src="https://d2dswzpx2y1fhq.cloudfront.net/_sdk/chegg.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
             Chegg.init({
                 appName: 'debtonator',
@@ -10,12 +15,6 @@
                 redirect: '/',
                 domain: 'https://henry.live.dev.cheggnet.com/'
             });
-            Chegg.auth({ deeplink: 'campaign.html' });
         </script>
-	</head>
-	<body>
-		<h1>Campaign Page</h1>
-        
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</body>
 </html>
