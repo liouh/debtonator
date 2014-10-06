@@ -1,4 +1,6 @@
 body {
     padding-top: 1px;
     margin-top: -1px;
+    padding-bottom: 1px;
+    margin-bottom: -1px;
 }
