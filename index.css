@@ -1,0 +1,57 @@
+/* ======================================= *\
+   Landing Page
+\* ======================================= */
+
+.landingPage header{
+    background-image: url();
+}
+
+.landingPage .floaters{
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.landingPage h1 {
+    font-family: "MuseoSansRounded-500";
+    font-size: 40px;
+    font-weight: normal
+}
+
+.landingPage h2 {
+    font-family: "MuseoSansRounded-100";
+    font-size: 18px;
+    font-weight: normal
+}
+
+.landingPage .container {
+    width: 980px
+    
+}
+.landingPage .floatingBox {
+    display: inline-block;
+    width: 300px ;
+    font-family: "MuseoSansRounded-100";
+    align-content: center;
+    text-align: center;
+}
+    
+.landingPage button {
+    background-color: #a1bc1d;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbce1b), color-stop(2px, #a1bc1d), color-stop(100%, #82a12f));
+    background-image: -webkit-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
+    background-image: -moz-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
+    background-image: -o-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
+    background-image: linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #5d7f17;
+    color: white;
+    height: 46px;
+    line-height: 44px;
+    font-size: 18px;
+    width: 50% ;
+    padding-left: 30px;
+    padding-right: 30px;
+}

@@ -1,0 +1,17 @@
+/* ======================================= *\
+   Campaign Page
+\* ======================================= */
+
+.campaignPage .progress {
+    width: 300px;
+}
+
+.campaignPage .fire {
+    height: 50px;
+}
+
+.campaignPage .fuse {
+    background-image: url(images/fuse.jpg);
+    height: 11px;
+    margin-top: -10px;
+}
