@@ -8,6 +8,6 @@ $(function() {
 		});
 
 		saveStudent(data);
-		window.location.href="/invite.html";
+		window.location.href="invite.html";
 	});
 });
