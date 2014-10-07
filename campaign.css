@@ -28,7 +28,7 @@ section {
 .progress {
     width: 780px;
     background-color: #F07D00;
-    border-radius: 15px;
+    border-radius: 7px;
     height: 32px;
     position: relative;
     overflow: hidden;
@@ -40,7 +40,6 @@ section {
     position: absolute;
     right: 0;
     -webkit-transition: all 1s ease;
-    border-radius: 15px;
     background: repeating-linear-gradient(-55deg,#555,#555 10px,#666 10px,#666 20px);
     height: 32px;
 }
