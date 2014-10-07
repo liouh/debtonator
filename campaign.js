@@ -31,3 +31,21 @@ function updateFeed() {
         Chegg.Canvas.resize();
     }).removeClass('hidden');
 }
+
+function fetchUser(cb){
+    if(!this.userEmail){
+        this.userEmail = window.location.href.split("?")[1].split('=')[1];
+    }
+    this.userEmail && findStudentByEmail(this.userEmail, function(studentObj){
+        cb && cb(studentObj._serverData);
+    })
+}
+
+function startPolling(timeout){
+    var time = timeout || 5000;
+    this.pollInterval = setInterval(fetchUser, time);
+}
+
+function stopPolling(){
+    clearInterval(this.pollInterval);
+}
