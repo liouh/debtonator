@@ -79,3 +79,7 @@ section {
     border-radius: 5px;
     min-height: 300px;
 }
+
+.clearfix {
+    clear: both;
+}
