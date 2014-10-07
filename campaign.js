@@ -1,11 +1,10 @@
 $(function() {
     
     $('.progress').fire({
-        speed:60,
-        minPow:3,
+        speed:50,
         maxPow:10,
         gravity:0,
-        flameWidth:3,
+        flameWidth:5,
         flameHeight:1,
         fadingFlameSpeed:9,
         fireTransparency: 100

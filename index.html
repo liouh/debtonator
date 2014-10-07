@@ -18,7 +18,7 @@
 
         <section class="floaters form-box">
             <h1 class="form-title">Set up your Debtonator Found to get help paying for college:</h1>
-            <div class="form-body">
+            <div class="form-body" id="submit_form">
 
                 <div class="form-field cf">
                     <label>Where are you going to college?</label>
@@ -32,18 +32,12 @@
 
                 <div class="form-field cf">
                     <label>What is your email?</label>
-                    <input type="text" name="email" value="ella@gmail.com" />
+                    <input type="text" name="email" value="elsa@gmail.com" />
                 </div>
-
-                <div class="form-field cf">
-                    <label>What is your password?</label>
-                    <input type="password" name="major" value="Testing1" />
-                </div>
-
 
                 <div class="form-field cf">
                     <label>What is your full name?</label>
-                    <input type="text" name="name" value="Ella Summer" />
+                    <input type="text" name="name" value="Elsa Summer" />
                 </div>
 
                 <div class="form-field cf">
@@ -56,12 +50,12 @@
 
                 <div class="form-field cf">
                     <label>What is your planned major?</label>
-                    <input type="text" name="major" value="Computer Science & Applied" />
+                    <input type="text" name="major" value="Computer Science" />
                 </div>
 
                 <div class="form-field cf">
                     <label>What is your career interest?</label>
-                    <input type="text" name="major" value="Software Engineer" />
+                    <input type="text" name="interest" value="Software Engineer" />
                 </div>
 
                 <div class="form-field cf">
@@ -72,7 +66,7 @@
 
 
                 <div class="form-field form-button">
-                    <button>Start my fund</button>
+                    <button id="submit_button">Start my fund</button>
                 </div>
             </div>
 
@@ -81,6 +75,8 @@
 
         <script src="https://d2dswzpx2y1fhq.cloudfront.net/_sdk/chegg.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.3.0.min.js"></script>
+        <script src="parse.js"></script>
         <script src="index.js"></script>
         <script>
         if(top != window) {

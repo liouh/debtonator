@@ -2,26 +2,112 @@
    Campaign Page
 \* ======================================= */
 
-.campaignPage .progress {
-    margin-left: 30px;
-    width: 500px;
+body {
+    color: #333;
+}
+
+section {
+    width: 950px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    overflow: hidden;
     float: left;
-    background-color: #ddd;
-    border-radius: 5px;
-    height: 40px;
+    margin-right: 15px;
+}
+
+.avatar img {
+    width: 150px;
+}
+
+.progress {
+    width: 780px;
+    background-color: #F07D00;
+    border-radius: 15px;
+    height: 32px;
     position: relative;
+    overflow: hidden;
+    box-shadow: 1px 0 5px white, inset 0 0 10px 3px #CF4819;
 }
 
-.campaignPage .progress canvas {
-    border-radius: 5px;
-}
-
-.campaignPage .fuse {
+.fuse {
     width: 100%;
     position: absolute;
     right: 0;
     -webkit-transition: all 1s ease;
+    border-radius: 15px;
+    background: repeating-linear-gradient(-55deg,#555,#555 10px,#666 10px,#666 20px);
+    height: 32px;
+}
+
+.name {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.progressLabel {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.content {
+    clear: both;
+    padding-top: 30px;
+}
+
+.feed {
+    float: left;
+    width: 620px;
+}
+
+.feed .item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 20px 20px 0;
+}
+
+.tiers {
+    float: right;
+    background-color: #efefef;
+    padding: 20px;
+    width: 250px;
     border-radius: 5px;
-    background-color: #333;
-    height: 40px;
+    min-height: 300px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media (max-width: 700px) {
+    
+    section {
+        width: 300px;
+    }
+    
+    .avatar {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .name {
+        text-align: center;
+    }
+    
+    .progress {
+        width: 300px;
+    }
+    
+    .feed {
+        width: 100%;
+    }
+    
+    .tiers {
+        display: none;
+    }
 }
