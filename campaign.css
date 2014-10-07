@@ -27,12 +27,19 @@ section {
 
 .progress {
     width: 780px;
-    background-color: #F07D00;
     border-radius: 7px;
     height: 32px;
     position: relative;
     overflow: hidden;
-    box-shadow: 1px 0 5px white, inset 0 0 10px 3px #CF4819;
+    background-color: #a1bc1d;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbce1b), color-stop(2px, #a1bc1d), color-stop(100%, #82a12f));
+    background-image: -webkit-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
+    background-image: -moz-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
+    background-image: -o-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
+    background-image: linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .fuse {
