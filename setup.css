@@ -49,7 +49,7 @@
 	font-family: "Helvetica", "Arial", Sans-serif;
 	font-size: 20px;
 	color: #333333;
-	padding: 0px 15px;
+	padding: 8px 15px;
 	width:333px;
 }
 .form-field textarea{
@@ -68,10 +68,11 @@
     margin-top: 15px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
+    text-align: right;
 }
 
 .form-button button {
-    width: 300px;
+    width: 330px;
     font-family: "MuseoSansRounded-500", Sans-serif;
     font-size: 20px;
     font-weight: normal;

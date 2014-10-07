@@ -1,7 +1,7 @@
 $(function() {
     
     $('.progress').fire({
-        speed:50,
+        speed:60,
         maxPow:10,
         gravity:0,
         flameWidth:5,
@@ -10,6 +10,7 @@ $(function() {
         fireTransparency: 100
     });
     
+    updateProgress(25);
 });
 
 function updateProgress(percentage) {
