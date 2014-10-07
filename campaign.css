@@ -56,8 +56,13 @@ section {
     margin-top: 10px;
 }
 
-.donate {
+.donate, .invite {
     margin-top: 10px;
+    width: 90px;
+    padding: 0;
+    text-align: center;
+    height: 38px;
+    line-height: 36px;
 }
 
 .content {
@@ -120,6 +125,10 @@ section {
     
     .progress {
         width: 300px;
+    }
+    
+    .progressLabel {
+        text-align: center;
     }
     
     .feed {
