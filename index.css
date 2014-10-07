@@ -2,35 +2,42 @@
    Landing Page
 \* ======================================= */
 
-.landingPage header{
+header{
     text-align: center;
 }
 
-.landingPage .floaters{
+.floaters{
+    
+}
+
+ .center-block{
     width: 980px;
     margin: 0 auto;
     text-align: center;
+}
+
+ .floaters{
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.landingPage h1 {
+ h1 {
     font-family: "MuseoSansRounded-500";
     font-size: 32px;
     font-weight: normal
 }
 
-.landingPage h2 {
+ h2 {
     font-family: "MuseoSansRounded-100";
     font-size: 18px;
     font-weight: normal
 }
 
-.landingPage .container {
+ .container {
     width: 980px
     
 }
-.landingPage .floatingBox {
+ .floatingBox {
     display: inline-block;
     width: 300px ;
     font-family: "MuseoSansRounded-100";
@@ -40,15 +47,15 @@
     vertical-align: top;
 }
 
-.landingPage .floatingBox.family img {
+ .floatingBox.family img {
     padding-bottom: 21px;
 }
 
-.landingPage .floatingBox.rewards img {
+ .floatingBox.rewards img {
     padding-bottom: 10px;
 }
     
-.landingPage button {
+ button {
     background-color: #a1bc1d;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbce1b), color-stop(2px, #a1bc1d), color-stop(100%, #82a12f));
     background-image: -webkit-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
