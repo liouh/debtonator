@@ -8,7 +8,7 @@ $(function() {
 		});
 
 		saveStudent(data, function(studentObj) {
-            window.location.href="campaign.html#user=" + studentObj._serverData.email;
+            window.location.href="campaign.html?user=" + studentObj._serverData.email;
         });
 	});
 });
