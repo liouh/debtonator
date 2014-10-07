@@ -71,6 +71,17 @@ section {
     padding: 20px 20px 20px 0;
 }
 
+.feed .item .date {
+    color: #999;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.feed .item .text {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
 .tiers {
     float: right;
     background-color: #efefef;
