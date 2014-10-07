@@ -46,8 +46,21 @@ function updateProgress(raised, total) {
     if(!total) total = 15000;
     if(!raised) raised = 5000;
     
-    var percentage = 100 - (raised / total * 100);
-    $('.fuse').css('width', '' + percentage + '%');
+    var percentage = raised / total * 100;
+    $('.fuse').css('width', '' + (100 - percentage) + '%');
+    
+    if(percentage >= 25) {
+        $('.tier')[0].style.color = '#0c0';
+    }
+    if(percentage >= 50) {
+        $('.tier')[1].style.color = '#0c0';
+    }
+    if(percentage >= 75) {
+        $('.tier')[2].style.color = '#0c0';
+    }
+    if(percentage >= 100) {
+        $('.tier')[3].style.color = '#0c0';
+    }
     
     raised = numeral(raised).format('0,0');
     $('.amountRaised').text(raised);
