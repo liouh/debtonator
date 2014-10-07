@@ -56,9 +56,13 @@ section {
     margin-top: 10px;
 }
 
+.donate {
+    margin-top: 10px;
+}
+
 .content {
     clear: both;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .feed {
@@ -69,6 +73,10 @@ section {
 .feed .item {
     border-bottom: 1px solid #ddd;
     padding: 20px 20px 20px 0;
+}
+
+.feed .item.hidden {
+    display: none;
 }
 
 .feed .item .date {
