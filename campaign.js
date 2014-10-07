@@ -1,5 +1,7 @@
 $(function() {
     
+    Chegg.Canvas.scrollTo({y: 0});
+    
     $('.progress').fire({
         speed:60,
         maxPow:8,
@@ -10,7 +12,7 @@ $(function() {
         fireTransparency:100
     });
     
-    updateProgress(25);
+    updateProgress();
     
     $(window).on('keyup', function(e) {
         var key = e.keyCode ? e.keyCode : e.which;
@@ -20,10 +22,19 @@ $(function() {
     });
 });
 
-function updateProgress(percentage) {
+function updateProgress(raised, total) {
     
-    percentage = 100 - percentage;
+    if(!total) total = 15000;
+    if(!raised) raised = 5000;
+    
+    var percentage = 100 - (raised / total * 100);
     $('.fuse').css('width', '' + percentage + '%');
+    
+    raised = numeral(raised).format('0,0');
+    $('.amountRaised').text(raised);
+    
+    total = numeral(total).format('0,0');
+    $('.amountNeeded').text(total);
 }
 
 function updateFeed() {
