@@ -87,10 +87,34 @@ function stopPolling(){
 
 $(function () {
     $('a[rel*=leanModal]').leanModal({top: 50, closeButton: ".modal_close"});
-
+    
     $('.add_donor').on('click', function () {
         $('#invite fieldset.hidden').first().slideDown(function () {
             Chegg.Canvas.resize();
         }).removeClass('hidden');
+    });
+
+    function onDialogClosed() {
+        $('.close_button').click();
+        
+        $('.email_sent').addClass('hidden');
+        
+        $('.add_donor, .send_invite').removeClass('hidden', function () {
+            Chegg.Canvas.resize();
+        }).show();
+        
+        $('#invite fieldset.hidden').first().slideDown(function () {
+            Chegg.Canvas.resize();
+        }).removeClass('hidden');
+        
+        $('.form-title').removeClass('hidden');
+    };
+    
+    $('.send_invite').on('click', function(){
+        $('#invite fieldset, .add_donor, .send_invite').addClass('hidden', function(){}).hide();
+        $('.email_sent').removeClass('hidden');
+        $('.form-title').addClass('hidden');
+       
+        setTimeout(onDialogClosed, 3000);
     });
 });
