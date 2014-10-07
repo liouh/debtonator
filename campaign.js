@@ -52,6 +52,7 @@ function updateProgress(raised, total) {
     
     var highlightColor = '#f07d00';
     
+    $('.tier').css('color', '#333');
     if(percentage >= 25) {
         $('.tier')[0].style.color = highlightColor;
     }
