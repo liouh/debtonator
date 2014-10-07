@@ -63,8 +63,18 @@
 }
 
 .form-button {
-	width: 500px;
+	width: 900px;
 	margin:auto;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-button button {
+    width: 300px;
+    font-family: "MuseoSansRounded-500", Sans-serif;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .cf:before,
