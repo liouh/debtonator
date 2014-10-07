@@ -4,6 +4,7 @@
 
 body {
     color: #333;
+    position: relative;
 }
 
 section {
@@ -63,7 +64,7 @@ section {
     margin-top: 10px;
 }
 
-.donate, .invite, .add_donor, .send_invite {
+.donate, .invite, .add_donor, .send_invite, .send_donation, .cancel {
     margin-top: 10px;
     width: 90px;
     padding: 0;
@@ -138,11 +139,11 @@ top: 0px;
 left: 0px;
 height:100%;
 width:100%;
-background: #000;
+background: #ccc;
 display: none;
 }
 
-#invite {
+#invite, #donate {
 width: 600px;
 display:none;
 background: #FFF;   
@@ -152,12 +153,12 @@ background: #FFF;
     font-size: 20px;
 }
 
-.add_donor{
+.add_donor, .cancel{
   width: 200px;
     margin-right: 5px;
 }
 
-.send_invite{
+.send_invite, .send_donation{
     width: 200px;
     margin-left:5px;
 }
