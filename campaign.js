@@ -1,5 +1,7 @@
 $(function() {
     
+    Chegg.Canvas.scrollTo({y: 0});
+    
     $('.progress').fire({
         speed:60,
         maxPow:8,
