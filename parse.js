@@ -1,5 +1,5 @@
 //for node, npm install parse
-var Parse = require('parse').Parse;
+//var Parse = require('parse').Parse;
 //for web include parse js
 //<script src="//www.parsecdn.com/js/parse-1.3.0.min.js"></script>
 Parse.initialize("2748U1d8IVsideEk9KK21sxQg15F1ap9127gZK6z", "nnsJFpZjOPAzU4euuCnaHBDWjJ2D8iwMTGhuTBbM");
