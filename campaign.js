@@ -45,7 +45,7 @@ $(function() {
 function updateProgress(raised, total) {
     
     if(!total) total = 15000;
-    if(!raised) raised = 5000;
+    if(!raised && raised !== 0) raised = 5000;
     
     var percentage = raised / total * 100;
     $('.fuse').css('width', '' + (100 - percentage) + '%');
