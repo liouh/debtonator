@@ -14,8 +14,7 @@ function saveStudent(student, callback) {
 
     studentObj.save(student, {
 	success: function(studentObj) {
-	    if (callback != null) 
-		callback();
+		callback && callback(studentObj);
 	    console.log('New object created with objectId: ' + studentObj.id);
 	},
 	error: function(studentObj, error) {
@@ -31,9 +30,7 @@ function findStudentByEmail(email, callback) {
     query.first({
 	success: function(object) {
 	    // Successfully retrieved the object.
-	    if (callback != null) {
-		callback(object);
-	    }
+		callback && callback(object);
 	},
 	error: function(error) {
 	    console.log("Error: " + error.code + " " + error.message);
@@ -46,8 +43,7 @@ function saveDonor(donor, callback) {
 
     donorObj.save(donor, {
 	success: function(donorObj) {
-	    if (callback != null)
-		callback();
+		callback && callback();
 	    console.log('New object created with objectId: ' + donorObj.id);
 	},
 	error: function(donorObj, error) {
@@ -56,16 +52,13 @@ function saveDonor(donor, callback) {
     });
 };
 
-
 function findDonorsByStudentEmail(email, callback) {
     var query = new Parse.Query(Donor);
     query.equalTo("email", email);
     query.find({
 	success: function(object) {
 	    // Successfully retrieved the object.
-	    if (callback != null) {
-		callback(object);
-	    }
+		callback && callback(object);
 	},
 	error: function(error) {
 	    console.log("Error: " + error.code + " " + error.message);
@@ -79,9 +72,7 @@ function saveActivity(activity, callback) {
 
     activityObj.save(activity, {
 	success: function(activityObj) {
-	    if (callback != null)
-		callback();
-	    
+		callback && callback(activityObj);
 	    console.log('New object created with objectId: ' + activityObj.id);
 	},
 	error: function(activityObj, error) {
@@ -97,9 +88,7 @@ function findActivitesByStudentEmail(email, callback) {
     query.find({
 	success: function(object) {
 	    // Successfully retrieved the object.
-	    if (callback != null) {
-		callback(object);
-	    }
+		callback && callback(object);
 	},
 	error: function(error) {
 	    console.log("Error: " + error.code + " " + error.message);
