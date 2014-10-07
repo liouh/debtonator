@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="normalize.min.css" />
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" type="text/css" href="setup.css" />
 	</head>
 	<body class="landingPage">
 		<header>
@@ -14,7 +15,70 @@
         <div class="floatingBox family"><img src="images/icon_ppl_group.png"/><br/>Ask family & friends for money without things getting awkward</div>
         <div class="floatingBox rewards"><img src="images/icon_new.png"/><br/>Get Chegg rewards, like discounts on textbooks, free study help, and free time with online tutors</div>
         </section>
-        <button class="startCampaign"> Start my fund</button>
+
+        <section class="floaters form-box">
+            <h1 class="form-title">Set up your Debtonator Found to get help paying for college:</h1>
+            <div class="form-body">
+
+                <div class="form-field cf">
+                    <label>Where are you going to college?</label>
+                    <input type="text" name="college" value="UCLA" />
+                </div>
+
+                <div class="form-field cf">
+                    <label>How much money do you need to pay for school?</label>
+                    <input type="text" name="goal" value="$15000" />
+                </div>
+
+                <div class="form-field cf">
+                    <label>What is your email?</label>
+                    <input type="text" name="email" value="ella@gmail.com" />
+                </div>
+
+                <div class="form-field cf">
+                    <label>What is your password?</label>
+                    <input type="password" name="major" value="Testing1" />
+                </div>
+
+
+                <div class="form-field cf">
+                    <label>What is your full name?</label>
+                    <input type="text" name="name" value="Ella Summer" />
+                </div>
+
+                <div class="form-field cf">
+                    <label>What is your gender?</label>
+                    <select name="gender">
+                        <option>Male</option>
+                        <option selected>Female</option>
+                    </select>
+                </div>
+
+                <div class="form-field cf">
+                    <label>What is your planned major?</label>
+                    <input type="text" name="major" value="Computer Science & Applied" />
+                </div>
+
+                <div class="form-field cf">
+                    <label>What is your career interest?</label>
+                    <input type="text" name="major" value="Software Engineer" />
+                </div>
+
+                <div class="form-field cf">
+                    <label>Tell us your story.</label>
+                    <textarea name="path"></textarea>
+                </div> 
+                
+
+
+                <div class="form-field form-button">
+                    <button>Start my fund</button>
+                </div>
+            </div>
+
+        </div>
+
+
         <script src="https://d2dswzpx2y1fhq.cloudfront.net/_sdk/chegg.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="index.js"></script>
