@@ -12,7 +12,9 @@ $(function() {
         fireTransparency:100
     });
     
-    startPolling();
+    window.userEmail = window.location.href.split("?")[1].split('=')[1];
+    
+    startPolling(2000);
     updateProgress();
     
     $(window).on('keyup', function(e) {
@@ -24,7 +26,7 @@ $(function() {
     
     var activityCount = -1;
     setInterval(function() {
-        findActivitesByStudentEmail(this.userEmail, function(o) {
+        findActivitesByStudentEmail(window.userEmail, function(o) {
             if(activityCount == -1) {
                 activityCount = o.length;
             }
@@ -54,8 +56,12 @@ function updateProgress(raised, total) {
     $('.amountNeeded').text(total);
 }
 
+function addDonation(amount) {
+    saveDonor({"email": window.userEmail, "amount": amount});
+}
+
 function triggerFeed() {
-    saveActivity({email: this.userEmail});
+    saveActivity({email: window.userEmail});
 }
 
 function updateFeed() {
@@ -64,14 +70,13 @@ function updateFeed() {
     }).removeClass('hidden');
 }
 
-function fetchUser(cb){
-    if(!this.userEmail){
-        if(window.location.href.split("?")[1]){
-            this.userEmail = window.location.href.split("?")[1].split('=')[1];
+function fetchUser() {
+    window.userEmail && findDonorsByStudentEmail(window.userEmail, function(o){
+        var amount = 0;
+        for(var i = 0; i < o.length; i++) {
+            amount += o[i].attributes.amount;
         }
-    }
-    this.userEmail && findStudentByEmail(this.userEmail, function(studentObj){
-        cb && cb(studentObj._serverData);
+        updateProgress(amount);
     })
 }
 
