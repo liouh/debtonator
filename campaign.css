@@ -48,7 +48,7 @@ section {
     position: absolute;
     right: 0;
     -webkit-transition: all 1s ease;
-    background: repeating-linear-gradient(-55deg,#555,#555 10px,#666 10px,#666 20px);
+    background: repeating-linear-gradient(-55deg, #555, #555 10px, #666 10px, #666 20px);
     height: 32px;
 }
 
@@ -133,34 +133,34 @@ section {
 }
 
 #lean_overlay {
-position: absolute;
-z-index: 10000;
-top: 0px;
-left: 0px;
-height:100%;
-width:100%;
-background: #ccc;
-display: none;
+    position: absolute;
+    z-index: 10000;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #ccc;
+    display: none;
 }
 
 #invite, #donate {
-width: 600px;
-display:none;
-background: #FFF;   
+    width: 600px;
+    display: none;
+    background: #FFF;
 }
 
-.form-title{
+.form-title {
     font-size: 20px;
 }
 
-.add_donor, .cancel{
-  width: 200px;
+.add_donor, .cancel {
+    width: 200px;
     margin-right: 5px;
 }
 
-.send_invite, .send_donation{
+.send_invite, .send_donation {
     width: 200px;
-    margin-left:5px;
+    margin-left: 5px;
 }
 
 .close_button {
@@ -173,7 +173,7 @@ background: #FFF;
     right: 15px;
 }
 
-.email_sent{
+.email_sent {
     font-size: 20px;
     padding: 10px 0;
     font-family: "MuseoSansRounded-500";
@@ -183,33 +183,54 @@ background: #FFF;
 }
 
 @media (max-width: 700px) {
-    
+
     section {
         width: 300px;
     }
-    
+
     .avatar {
         float: none;
         margin: 0 auto;
     }
-    
+
     .name {
         text-align: center;
     }
-    
+
     .progress {
         width: 300px;
     }
-    
+
     .progressLabel {
         text-align: center;
     }
-    
+
     .feed {
         width: 100%;
     }
-    
+
     .tiers {
         display: none;
+    }
+
+    #donate {
+        width: 200px !important;
+    }
+
+    #donate h1 {
+        margin-bottom: 0;
+    }
+
+    #donate fieldset {
+        padding: 10px 0;
+        margin-bottom: 15px;
+    }
+
+    #donate input[name="amount"] {
+        width: 80px;
+    }
+
+    #donate .button {
+        margin: 0;
     }
 }
