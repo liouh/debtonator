@@ -7,7 +7,8 @@ $(function() {
 				data[$el.attr('name')] = $el.val();
 		});
 
-		saveStudent(data);
-		window.location.href="invite.html";
+		saveStudent(data, function() {
+            window.location.href="invite.html";
+        });
 	});
 });

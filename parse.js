@@ -114,7 +114,6 @@ function run_test() {
 	"major" : "Astrophysics",
 	"bio" : "School costs too much",
 	"profile_pic" : "http://orcz.com/images/d/d5/Spwendy.PNG",
-	"password" : "testing",
 	"type": "student",
 	"career_interest" : "STEM"
     }
