@@ -46,7 +46,8 @@ section {
 }
 
 .name {
-    font-size: 30px;
+    font-family: "MuseoSansRounded-500";
+    font-size: 32px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
@@ -101,7 +102,23 @@ section {
     padding: 20px;
     width: 250px;
     border-radius: 5px;
-    min-height: 500px;
+}
+
+.tiers .title {
+    font-family: "MuseoSansRounded-500";
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.tiers .tier {
+    font-family: "MuseoSansRounded-500";
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.tiers .prize {
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .clearfix {
