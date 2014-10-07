@@ -9,11 +9,13 @@ var Donor = Parse.Object.extend("Donor");
 var Activity = Parse.Object.extend("Activity");
 
 
-function saveStudent(student) {
+function saveStudent(student, callback) {
     var studentObj = new Student();
 
     studentObj.save(student, {
 	success: function(studentObj) {
+	    if (callback != null) 
+		callback();
 	    console.log('New object created with objectId: ' + studentObj.id);
 	},
 	error: function(studentObj, error) {
@@ -21,6 +23,7 @@ function saveStudent(student) {
 	}
     });
 };
+
 
 function findStudentByEmail(email, callback) {
     var query = new Parse.Query(Student);
@@ -38,12 +41,13 @@ function findStudentByEmail(email, callback) {
     });
 };
 
-
 function saveDonor(donor, callback) {
     var donorObj = new Donor();
 
     donorObj.save(donor, {
 	success: function(donorObj) {
+	    if (callback != null)
+		callback();
 	    console.log('New object created with objectId: ' + donorObj.id);
 	},
 	error: function(donorObj, error) {
@@ -70,11 +74,14 @@ function findDonorsByStudentEmail(email, callback) {
 };
 
 
-function saveActivity(activity) {
+function saveActivity(activity, callback) {
     var activityObj = new Activity();
 
     activityObj.save(activity, {
 	success: function(activityObj) {
+	    if (callback != null)
+		callback();
+	    
 	    console.log('New object created with objectId: ' + activityObj.id);
 	},
 	error: function(activityObj, error) {
@@ -118,10 +125,11 @@ function run_test() {
 	"career_interest" : "STEM"
     }
 
-    saveStudent(student);
+    saveStudent(student, cb);
     //console.log(student);
-    findStudentByEmail("elsa@chegg.com");
-    findDonorsByStudentEmail("elsa@chegg.com", function(obj) { console.log(obj); });
+    var cb = function(obj) { console.log(obj); }
+    findStudentByEmail("elsa@chegg.com", cb);
+    findDonorsByStudentEmail("elsa@chegg.com", cb);
 }
 
 //run_test();
