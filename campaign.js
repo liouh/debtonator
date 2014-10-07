@@ -27,6 +27,7 @@ function updateProgress(percentage) {
 }
 
 function updateFeed() {
-    $('.item.hidden').last().slideDown().removeClass('hidden');
-    Chegg.Canvas.resize();
+    $('.item.hidden').last().slideDown(function() {
+        Chegg.Canvas.resize();
+    }).removeClass('hidden');
 }
