@@ -9,7 +9,7 @@ body {
 section {
     width: 950px;
     margin: 0 auto;
-    padding: 30px 15px;
+    padding: 30px 10px;
 }
 
 .avatar {
@@ -82,4 +82,32 @@ section {
 
 .clearfix {
     clear: both;
+}
+
+@media (max-width: 700px) {
+    
+    section {
+        width: 300px;
+    }
+    
+    .avatar {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .name {
+        text-align: center;
+    }
+    
+    .progress {
+        width: 300px;
+    }
+    
+    .feed {
+        width: 100%;
+    }
+    
+    .tiers {
+        display: none;
+    }
 }
