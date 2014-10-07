@@ -2,15 +2,16 @@ $(function() {
     
     Chegg.Canvas.scrollTo({y: 0});
     
-    $('.progress').fire({
-        speed:60,
-        maxPow:8,
-        gravity:0,
-        flameWidth:4,
-        flameHeight:1,
-        fadingFlameSpeed:9,
-        fireTransparency:100
-    });
+//    $('.progress').fire({
+//        speed:60,
+//        maxPow:8,
+//        gravity:0,
+//        flameWidth:4,
+//        flameHeight:1,
+//        fadingFlameSpeed:9,
+//        fireTransparency:100,
+//        globalTransparency: 70
+//    });
     
     window.userEmail = window.location.href.split("?")[1].split('=')[1];
     
@@ -49,17 +50,19 @@ function updateProgress(raised, total) {
     var percentage = raised / total * 100;
     $('.fuse').css('width', '' + (100 - percentage) + '%');
     
+    var highlightColor = '#f07d00';
+    
     if(percentage >= 25) {
-        $('.tier')[0].style.color = '#0c0';
+        $('.tier')[0].style.color = highlightColor;
     }
     if(percentage >= 50) {
-        $('.tier')[1].style.color = '#0c0';
+        $('.tier')[1].style.color = highlightColor;
     }
     if(percentage >= 75) {
-        $('.tier')[2].style.color = '#0c0';
+        $('.tier')[2].style.color = highlightColor;
     }
     if(percentage >= 100) {
-        $('.tier')[3].style.color = '#0c0';
+        $('.tier')[3].style.color = highlightColor;
     }
     
     raised = numeral(raised).format('0,0');
