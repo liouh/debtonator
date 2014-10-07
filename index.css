@@ -2,44 +2,18 @@
    Landing Page
 \* ======================================= */
 
-header{
+header {
     text-align: center;
 }
 
-.floaters{
-    
-}
-
- .center-block{
-    width: 980px;
-    margin: 0 auto;
-    text-align: center;
-}
-
- .floaters{
+.floaters {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
- h1 {
-    font-family: "MuseoSansRounded-500";
-    font-size: 32px;
-    font-weight: normal
-}
-
- h2 {
-    font-family: "MuseoSansRounded-100";
-    font-size: 18px;
-    font-weight: normal
-}
-
- .container {
-    width: 980px
-    
-}
- .floatingBox {
+ 
+.floatingBox {
     display: inline-block;
-    width: 300px ;
+    width: 300px;
     font-family: "MuseoSansRounded-100";
     align-content: center;
     text-align: center;
@@ -47,31 +21,90 @@ header{
     vertical-align: top;
 }
 
- .floatingBox.family img {
+.floatingBox.family img {
     padding-bottom: 11px;
 }
 
- .floatingBox.rewards img {
+.floatingBox.rewards img {
     padding-bottom: 10px;
 }
+
+/* ======================================= *\
+   Index page form
+\* ======================================= */
+
+.form-box {
+    width: 900px;
+	border-top: solid 4px #f07400;
+	background-color: #e6e6e6; 
+	padding: 15px 40px;
+    margin-bottom: 30px;
+
+}
+.form-title {
+	font-family: "MuseoSansRounded-500";
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 10px; 
+    border-bottom : 1px solid #ccc;
+}
+
+.form-body {
+	padding:5px 0;
+}
+.form-field {
+	padding:5px 0;
+}
+.form-field label{
+	float:left;
+	font-family: "MuseoSansRounded-100";
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
     
- button {
-    background-color: #a1bc1d;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbce1b), color-stop(2px, #a1bc1d), color-stop(100%, #82a12f));
-    background-image: -webkit-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
-    background-image: -moz-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
-    background-image: -o-linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
-    background-image: linear-gradient(#bbce1b 0%, #a1bc1d 2px, #82a12f);
-    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    border: 1px solid #5d7f17;
-    color: white;
-    height: 46px;
-    line-height: 44px;
-    font-size: 18px;
-    width: 50% ;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 7px;
+}
+.form-field input {
+	float:right;
+	height: 40px;
+	font-family: "Helvetica", "Arial", Sans-serif;
+	font-size: 20px;
+	color: #333333;
+	padding: 0px 15px;
+	width:300px;
+}
+.form-field select{
+	float:right;
+	line-height: 34px;
+	font-family: "Helvetica", "Arial", Sans-serif;
+	font-size: 20px;
+	color: #333333;
+	padding: 8px 15px;
+	width:333px;
+}
+.form-field textarea{
+	float:right;
+	height: 134px;
+	font-family: "Helvetica", "Arial", Sans-serif;
+	font-size: 20px;
+	color: #333333;
+	padding: 0px 15px;
+	width:300px;
+}
+
+.form-button {
+	width: 900px;
+	margin:auto;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+.form-button button {
+    width: 330px;
+    font-family: "MuseoSansRounded-500", Sans-serif;
+    font-size: 20px;
+    font-weight: normal;
 }
