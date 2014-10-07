@@ -15,7 +15,7 @@ $(function() {
     window.userEmail = window.location.href.split("?")[1].split('=')[1];
     
     startPolling(2000);
-    updateProgress();
+//    updateProgress();
     
     $(window).on('keyup', function(e) {
         var key = e.keyCode ? e.keyCode : e.which;
