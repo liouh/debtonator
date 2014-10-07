@@ -19,7 +19,7 @@
             <div class="bomb"></div>
             <div class="progressLabel">
                 <strong>$<span class="amountRaised">0</span></strong> raised of <strong>$<span class="amountNeeded">0</span></strong><br/>
-                <button class="donate button">Donate</button>
+                <a rel="leanModal" name="donate" href="#donate"><button class="donate button">Donate</button></a>
                 <a rel="leanModal" name="invite" href="#invite"><button class="invite button-light">Invite</button></a>
             </div>
             <div class="content">
@@ -98,7 +98,7 @@
 
                     <div class="form-field cf">
                         <label>Email</label>
-                        <input type="text" name="email" value="frank@enstein.com"/>
+                        <input type="text" name="email" value="frank@summers.com"/>
                     </div>
                 </fieldset>
                 
@@ -157,6 +157,28 @@
             </div>
 
         </section>
+        
+         <section id="donate" class="center-block form-box">
+            <span class="modal_close close_button"></span>
+            <h1 class="form-title">Home much would you like to donate?</h1>
+
+            <div class="form-body">
+
+                <fieldset>
+                    <div class="form-field cf">
+                        <label>Amount</label>
+                        <input type="text" name="amount" value=""/>
+                    </div>
+                </fieldset>
+                
+                <div class="email_sent hidden">Thanks for your donation!</div>
+                
+                <button class="button-light cancel">Cancel</button>
+                <button class="button send_donation">Send Donation</button>
+            </div>
+
+        </section>
+        
         <script src="https://d2dswzpx2y1fhq.cloudfront.net/_sdk/chegg.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>

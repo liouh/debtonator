@@ -57,6 +57,7 @@ function updateProgress(raised, total) {
 }
 
 function addDonation(amount) {
+    amount = parseInt(amount, 10);
     saveDonor({"email": window.userEmail, "amount": amount});
 }
 
@@ -93,6 +94,8 @@ function stopPolling(){
 $(function () {
     $('a[rel*=leanModal]').leanModal({top: 50, closeButton: ".modal_close"});
     
+    //Invite Dialog
+    
     $('.add_donor').on('click', function () {
         $('#invite fieldset.hidden').first().slideDown(function () {
             Chegg.Canvas.resize();
@@ -100,7 +103,7 @@ $(function () {
     });
 
     function onDialogClosed() {
-        $('.close_button').click();
+        $('#invite .close_button').click();
         
         $('.email_sent').addClass('hidden');
         
@@ -116,10 +119,43 @@ $(function () {
     };
     
     $('.send_invite').on('click', function(){
+        Chegg.Canvas.scrollTo({y: 0});
         $('#invite fieldset, .add_donor, .send_invite').addClass('hidden', function(){}).hide();
         $('.email_sent').removeClass('hidden');
         $('.form-title').addClass('hidden');
        
-        setTimeout(onDialogClosed, 3000);
+        setTimeout(onDialogClosed, 2000);
     });
+    
+    
+    //Donation Dialog
+    
+    function onDonationDialogClosed(){
+        $('#donate .close_button').click();
+        $('#donate fieldset, .cancel, .send_donation').removeClass('hidden', function(){}).show();
+        
+        $('#donate .email_sent').addClass('hidden');
+        $('#donate .form-title').removeClass('hidden');
+    }
+    
+    $('.send_donation').on('click', function(){
+        
+        var amount = $('input[name="amount"]').val();
+        
+        if(amount){
+            addDonation(amount);
+        }
+        
+        Chegg.Canvas.scrollTo({y: 0});
+        $('#donate fieldset, .cancel, .send_donation').addClass('hidden', function(){}).hide();
+        $('#donate .email_sent').removeClass('hidden');
+        $('.form-title').addClass('hidden');
+       
+        setTimeout(onDonationDialogClosed, 2000);
+    });
+    
+    $('.cancel').on('click', function(){
+         $('#donate .close_button').click();
+    });
+    
 });
