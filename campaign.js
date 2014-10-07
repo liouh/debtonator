@@ -66,7 +66,9 @@ function updateFeed() {
 
 function fetchUser(cb){
     if(!this.userEmail){
-        this.userEmail = window.location.href.split("?")[1].split('=')[1];
+        if(window.location.href.split("?")[1]){
+            this.userEmail = window.location.href.split("?")[1].split('=')[1];
+        }
     }
     this.userEmail && findStudentByEmail(this.userEmail, function(studentObj){
         cb && cb(studentObj._serverData);
@@ -82,3 +84,13 @@ function startPolling(timeout){
 function stopPolling(){
     clearInterval(this.pollInterval);
 }
+
+$(function () {
+    $('a[rel*=leanModal]').leanModal({top: 50, closeButton: ".modal_close"});
+
+    $('.add_donor').on('click', function () {
+        $('#invite fieldset.hidden').first().slideDown(function () {
+            Chegg.Canvas.resize();
+        }).removeClass('hidden');
+    });
+});

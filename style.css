@@ -133,3 +133,92 @@ h2 {
 .cf {
     *zoom: 1;
 }
+
+/* ======================================= *\
+   page form
+\* ======================================= */
+
+.form-box {
+    width: 900px;
+	border-top: solid 4px #f07400;
+	background-color: #e6e6e6; 
+	padding: 15px 40px;
+    margin-bottom: 30px;
+
+}
+.form-title {
+	font-family: "MuseoSansRounded-500";
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 10px; 
+    border-bottom : 1px solid #ccc;
+}
+
+.form-body {
+	padding:5px 0;
+}
+.form-field {
+	padding:5px 0;
+}
+.form-field label{
+	float:left;
+	font-family: "MuseoSansRounded-100";
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    
+}
+.form-field input {
+	float:right;
+	height: 40px;
+	font-family: "Helvetica", "Arial", Sans-serif;
+	font-size: 20px;
+	color: #333333;
+	padding: 0px 15px;
+	width:300px;
+}
+.form-field select{
+	float:right;
+	line-height: 34px;
+	font-family: "Helvetica", "Arial", Sans-serif;
+	font-size: 20px;
+	color: #333333;
+	padding: 8px 15px;
+	width:333px;
+}
+.form-field textarea{
+	float:right;
+	height: 134px;
+	font-family: "Helvetica", "Arial", Sans-serif;
+	font-size: 20px;
+	color: #333333;
+	padding: 0px 15px;
+	width:300px;
+}
+
+.form-button {
+	width: 900px;
+	margin:auto;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+.form-button button {
+    width: 330px;
+    font-family: "MuseoSansRounded-500", Sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+fieldset{
+    border: none;
+    border-bottom : 1px solid #ccc;
+}
+
+.hidden{
+    display: none;
+}

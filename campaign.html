@@ -20,7 +20,7 @@
             <div class="progressLabel">
                 <strong>$<span class="amountRaised">0</span></strong> raised of <strong>$<span class="amountNeeded">0</span></strong><br/>
                 <button class="donate button">Donate</button>
-                <button class="invite button-light">Invite</button>
+                <a rel="leanModal" name="invite" href="#invite"><button class="invite button-light">Invite</button></a>
             </div>
             <div class="content">
                 <div class="tiers">tiers</div>
@@ -61,10 +61,95 @@
             </div>
             <div class="clearfix"></div>
         </section>
+
+        <section id="invite" class="center-block form-box">
+            <span class="modal_close close_button"></span>
+            <h1 class="form-title">Your fund has been created! Now invite your family & friends</h1>
+
+            <div class="form-body" id="submit_form">
+
+                <fieldset>
+                    <div class="form-field cf">
+                        <label>Name</label>
+                        <input type="text" name="name" value="Frank"/>
+                    </div>
+
+                    <div class="form-field cf">
+                        <label>Relationship</label>
+                        <select name="relation">
+                            <option>Mom</option>
+                            <option>Dad</option>
+                            <option selected="selected">Uncle</option>
+                            <option>Aunt</option>
+                            <option>Sister</option>
+                            <option>Brother</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field cf">
+                        <label>Email</label>
+                        <input type="text" name="email" value="frank@enstein.com"/>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="hidden">
+                    <div class="form-field cf">
+                        <label>Name</label>
+                        <input type="text" name="name" value="Anna"/>
+                    </div>
+
+                    <div class="form-field cf">
+                        <label>Relationship</label>
+                        <select name="relation">
+                            <option>Mom</option>
+                            <option>Dad</option>
+                            <option>Uncle</option>
+                            <option>Aunt</option>
+                            <option selected="selected">Sister</option>
+                            <option>Brother</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field cf">
+                        <label>Email</label>
+                        <input type="text" name="email" value="anna@summers.com"/>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="hidden">
+                    <div class="form-field cf">
+                        <label>Name</label>
+                        <input type="text" name="name" value="Suzy"/>
+                    </div>
+
+                    <div class="form-field cf">
+                        <label>Relationship</label>
+                        <select name="relation">
+                            <option selected="selected">Mom</option>
+                            <option>Dad</option>
+                            <option>Uncle</option>
+                            <option>Aunt</option>
+                            <option>Sister</option>
+                            <option>Brother</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field cf">
+                        <label>Email</label>
+                        <input type="text" name="email" value="suzy@summers.com"/>
+                    </div>
+                </fieldset>
+                
+                <button class="button-light add_donor">Add Donor</button>
+                <button class="button modal_close send_invite">Send Invite</button>
+            </div>
+
+        </section>
         <script src="https://d2dswzpx2y1fhq.cloudfront.net/_sdk/chegg.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
         <script src="https://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
+        <script src="jquery.leanModal.min.js"></script>
         <script src="fire-0.62.min.js"></script>
         <script src="parse.js"></script>
         <script src="campaign.js"></script>

@@ -56,7 +56,7 @@ section {
     margin-top: 10px;
 }
 
-.donate, .invite {
+.donate, .invite, .add_donor, .send_invite {
     margin-top: 10px;
     width: 90px;
     padding: 0;
@@ -106,6 +106,47 @@ section {
 
 .clearfix {
     clear: both;
+}
+
+#lean_overlay {
+position: absolute;
+z-index: 10000;
+top: 0px;
+left: 0px;
+height:100%;
+width:100%;
+background: #000;
+display: none;
+}
+
+#invite {
+width: 600px;
+display:none;
+background: #FFF;   
+}
+
+.form-title{
+    font-size: 20px;
+}
+
+.add_donor{
+  width: 200px;
+    margin-right: 15px;
+}
+
+.send_invite{
+    width: 200px;
+    margin-left:15px;
+}
+
+.close_button {
+    background-image: url('images/close.png');
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 @media (max-width: 700px) {
